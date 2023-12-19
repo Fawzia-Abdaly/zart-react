@@ -1,10 +1,17 @@
-// Import necessary modules
 import React from 'react';
 
 const ContactUs = () => {
+  const centerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: 'calc(100vh - 40px)', // Adjust as needed
+  };
+
   return (
-    <section id="contact">
-      <h2>Contact the Painting Shop</h2>
+    <section id="contact" style={centerStyle}>
+      <h2>Get in Touch with Our Art Gallery</h2>
       <form>
         <label htmlFor="name">Name:</label><br />
         <input type="text" id="name" name="name" /><br />
